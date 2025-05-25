@@ -1,0 +1,303 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+/*----------------Общееее-----------------*/
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  padding-top: 72px;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  margin: 0 81px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 1124px;
+  margin: 0 auto;
+}
+
+/*-------HEADER---------------------*/
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 72px;
+  box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
+  z-index: 9999;
+  background-color: #FFFFFF;
+}
+
+.header-content {
+  width: 100%;
+  height: 100%;
+  max-width: 1124px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  padding: 0 0 0 81px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  padding: 0 97px 0 0;
+}
+
+.button {
+  width: 78px;
+  height: 40px;
+  margin-right: 27px;
+  background: none;
+  border: 1px solid #E0E0E0;
+  border-radius: 1px;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: #E0E0E0;
+}
+
+/*-------Основной контент---------------------*/
+
+
+.content {
+  margin: 0 81px;
+}
+
+/*-------Поиск--------------------*/
+
+.search {
+  display: flex;
+  align-items: flex-end;
+  width: 956px;
+  height: 48px;
+  padding: 32px 0 56px 0;
+
+}
+
+input {
+  width: 956px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  font-size: 16px;
+  line-height: 24px;
+  transition: border-bottom 0.2s ease-in;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 5px solid rgb(0, 0, 252);
+}
+
+/*-------Заголовок---------------------*/
+
+h1 {
+  width: 217px;
+  height: 34px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34px;
+  padding-bottom: 16px;
+}
+
+/*-------Рестораны---------------------*/
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 16px;
+  row-gap: 16px;
+  flex-wrap: wrap;
+  padding-bottom: 80px;
+}
+
+figure {
+  width: 308px;
+  height: 366px;
+  display: inline-block;
+}
+
+figcaption {
+  padding: 16px 0 20px 0;
+}
+
+h2 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1D1D;
+}
+
+.kitchen {
+  font-size: 14px;
+  line-height: 21px;
+  color: #626262;
+
+}
+
+.time {
+  font-size: 13px;
+  line-height: 21px;
+  color: #1D1D1D;
+}
+
+/*-------Рестораны---------------------*/
+
+.content-footer {
+  margin: 0 81px;
+}
+
+footer .container {
+  height: 552px;
+  background-color: #262626;
+}
+
+
+.logo-footer {
+  display: flex;
+  align-items: center;
+  width: 956px;
+  height: 116px;
+  border-bottom:1px solid #FFFFFF;
+}
+
+
+.menu-footer {
+  display: flex;
+  gap: 80px;
+  justify-content: flex-start;
+  height: 220px;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+
+#language {
+  width: 227px;
+  height: 40px;
+  padding-left: 48px;
+  border-radius: 5px;
+  background-color: #3B3B3B;
+  border-color:  #3B3B3B;
+  color: #ffffff;
+}
+
+#language option {
+  color: #ffffff;
+}
+
+.network-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 92px;
+  height: 60px;
+}
+
+.icon {
+  height: 24px;
+}
+
+.network-image  em {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.network-image  em:before {
+  content: '#';
+  color: #49A144;
+  font-size: 16px;
+}
+
+.language-block {
+  margin-top: 32px;
+  margin-bottom: 33px
+}
+
+
+.one-list {
+  padding-top: 39px;
+}
+
+ul li {
+  font-size: 13px;
+  padding-bottom: 23px;
+  color: #FFFFFF;
+  line-height: 100%;
+  list-style: none;
+}
+
+
+
+.two-list {
+  padding-top: 39px;
+}
+
+
+/*-------Рестораны---------------------*/
+
+.download {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+
+#appstore {
+  margin-right: 40px;
+}
+
+
+
+
+.end {
+  height: 93px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 160px;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 11px;
+}
